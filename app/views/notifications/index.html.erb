@@ -3,8 +3,8 @@
 
 <%= form_tag 'new/', method: "post" do %>
 <div class="form-group">
-    <%= label_tag :to, "Enter a Message:" %>
-    <%= text_field_tag :to, '', class: "form-control", placeholder: "Enter phone number" %>
+    <%= label_tag :to, "Enter recipients phone number" %>
+    <%= text_field_tag :to, '', class: "form-control", placeholder: "" %>
   </div>
   <div class="form-group">
     <%= label_tag :message, "Enter a Message:" %>
