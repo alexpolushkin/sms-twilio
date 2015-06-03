@@ -2,8 +2,12 @@
 <p>Use this form to send MMS notifications to any subscribers.</p>
 
 <%= form_tag 'new/', method: "post" do %>
+div class="form-group">
+	<%= label_tag :from, "From:" %>
+	<%= text_field_tag :from, '', class: "form-control", placeholder: "" %>
+</div>
 <div class="form-group">
-	<%= label_tag :to, "Enter phone number to text:" %>
+	<%= label_tag :to, "To:" %>
 	<%= text_field_tag :to, '', class: "form-control", placeholder: "" %>
 </div>
   <div class="form-group">
