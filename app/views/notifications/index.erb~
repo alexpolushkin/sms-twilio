@@ -1,4 +1,0 @@
-<pre>
-<%= Cowsay.say("Hello") %>
-</pre>
-...
