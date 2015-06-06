@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 ruby "2.2.1"
 
+gem "trails"
+
+gem "twilio"
+
 gem "heroku"
 
 gem "rails_12factor"
