@@ -1,6 +1,5 @@
 class Subscriber < ActiveRecord::Base
 
-  # Notify our appointment attendee X minutes before the appointment time
   def send_message(msg, image_url)
     @twilio_number = ENV['+19179096072']
     @client = Twilio::REST::Client.new ENV['AC127af8098ad486a9dab8f83014b5c74b'],

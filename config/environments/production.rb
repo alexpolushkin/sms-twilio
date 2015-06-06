@@ -1,6 +1,4 @@
 Rails.application.configure do
-
-  config.middleware.use Rack::TwilioWebhookAuthentication, Rails.application.secrets.twilio_auth_token, '/message'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
