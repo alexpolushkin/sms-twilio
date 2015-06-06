@@ -1,7 +1,6 @@
-<h1>SMS Notifications</h1>
-<p>Use this form to send MMS notifications to any subscribers.</p>
+<h1>Twilio SMS</h1>
 
-<%= form_tag 'new/', method: "post" do %>
+<%= form_tag '/new', method: "post" do %>
 <div class="form-group">
     <%= label_tag :to, "Enter recipients phone number" %>
     <%= text_field_tag :to, '', class: "form-control", placeholder: "" %>
