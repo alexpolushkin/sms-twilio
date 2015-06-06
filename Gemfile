@@ -12,6 +12,10 @@ gem "rails_12factor"
 
 gem 'twilio-ruby', '~>4.2'
 
+group :test do
+  gem 'cucumber'
+end
+
 group :production do
   gem 'thin'
 end
