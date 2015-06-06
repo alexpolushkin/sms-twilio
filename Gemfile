@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem "heroku"
 
+gem "rails_12factor"
+
 gem 'twilio-ruby', '~>4.2'
 
 group :production do
