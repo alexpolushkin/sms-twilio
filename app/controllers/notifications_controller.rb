@@ -6,8 +6,8 @@ class NotificationsController < ApplicationController
     @phone_number = params[:From]
 
     # Find the subscriber associated with this number or create a new one
-    @new_subscriber = Subscriber.find_or_create(:phone_number => @phone_number) === true
-    @subscriber = Subscriber.exists?(:phone_number => @phone_number) === true
+    @new_subscriber = Subscriber.find_or_create(:phone_number => @phone_number)
+    @subscriber = Subscriber.exists?(:phone_number => @phone_number)
 
     @body = if params[:Body].nil? then '' else params[:Body].downcase end
     begin
