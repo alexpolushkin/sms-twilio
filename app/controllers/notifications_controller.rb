@@ -9,7 +9,7 @@ class NotificationsController < ApplicationController
     # old one below
     # @new_subscriber = Subscriber.exists?(:phone_number => @phone_number) === false
     # @subscriber = Subscriber.first_or_create(:phone_number => @phone_number)
-    @new_subscriber = Subscriber.first_or_create(:phone_number => @phone_number) === false
+    @new_subscriber = Subscriber.first_or_create(:phone_number => @phone_number)
     @subscriber = Subscriber.exists?(:phone_number => @phone_number) === true
 
     @body = if params[:Body].nil? then '' else params[:Body].downcase end
